@@ -1,0 +1,581 @@
+*{
+    margin:0;
+    padding:0;
+    }
+/*--------Navbar Section----*/
+#main-div{
+    display:flex;
+    align-items: center;
+}
+ /* .main-div-heading{
+    color:white;
+    top:5px;
+} */
+#main-div h3 a{
+    text-decoration: none;
+    color:white;
+}
+.main-div-heading{
+    margin-top:10px;
+} 
+#main-div{
+    content:"";
+    background-color: aqua;
+    height:10%;
+    width:100%;
+    position: fixed;
+    z-index:1000;
+    animation:Jayant 5s infinite;
+}
+@keyframes Jayant {
+    0%{
+        background-color: aqua;    
+    }
+    20%{
+        background-color: red;
+    }
+    50%{
+        background-color: lightgreen;
+    }
+    70%{
+        background-color: orange;
+    }
+    100%{
+        background-color: tomato;
+    }
+}
+.navbar-unorderedlist{
+    display:flex;
+    margin-left:13rem; 
+    
+}
+.navbar-list{
+    margin-left:5rem;
+    display: block;
+}
+.navbar-list a{
+    text-decoration: none;
+    color:white;
+}
+.navbar-list a:hover{
+    background-color: orange;
+    color:white;
+    border-radius: 80%;
+    padding:20px 20px;
+}
+/*-------About Us section and background image animation -----*/
+#background::before{
+    content:"";
+    background-image: url('/Website/Images/back.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width:100%;
+    z-index: 20;
+    opacity: 20rem;
+    margin-top:1.7%;
+    animation:jayant 20s infinite;
+}
+@keyframes jayant{
+10%{
+    background-image: url('/Website/Images/back.gif');
+}
+30%{
+    background-image: url('/Website/Images/one.gif');
+}
+70%{
+    background-image: url('/Website/Images/two.gif');
+}
+100%{
+    background-image: url('/Website/Images/three.gif');
+}
+}
+.container{
+    position: absolute;
+    top:130%;
+    font-size: 1.5rem;
+    left:2%;
+}
+#background h1{
+    position: absolute;
+    top:120%;
+   left:44%;
+}
+.container h4{
+    color:blue;
+}
+.container ul li{
+display: block;
+}
+
+/*Data form Section*/
+#details{
+    position: absolute;
+    top:300%;
+}
+#details h1{
+    position: relative;
+    left:35rem;
+}
+#details form{
+    margin-top:15%;
+    position: relative;
+    left:140%;    
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    background-color:darkcyan;
+    box-shadow: 3px 3px 10px 10px rgb(4, 85, 117);
+    border-radius: 100% 100% 106% 104% / 30% 30% 70% 70% ;
+    padding:15% 1%;
+    animation:jayantform 2s infinite;
+}
+@keyframes jayantform {
+    0%{
+        border-radius: 100% 100% 106% 104% / 30% 30% 70% 70% ;
+    }
+    30%{
+        border-radius: 47% 53% 34% 66% / 49% 50% 50% 51%  ;
+    }
+    60%{
+        border-radius: 98% 2% 64% 36% / 8% 50% 50% 92%  ;
+    }
+    100%{
+        border-radius: 100% 0% 48% 52% / 10% 10% 90% 90%   ;
+    }
+}
+#details form input,label{
+font:2rem solid;
+margin-top:1rem;
+background:linear-gradient(40deg,purple 40%,skyblue 30%);
+color:white;
+}
+#details select{
+    font:2rem solid;
+    margin-top:1rem;
+    background:linear-gradient(40deg,purple 40%,skyblue 30%);
+    width:100%;
+    color:tomato;
+}
+::placeholder{
+    color:white;
+}
+.btn{
+    width:100%;
+    cursor: pointer;
+    border-radius: 60%;
+}
+/*Contact Us Section*/
+#contact{
+    position: absolute;
+    top:410%;
+    left:40%;
+}
+#contact h1{
+    position: relative;
+    left:20%;
+}
+#contact form input,textarea{
+font:2rem solid;
+position: relative;
+margin-top:1rem;
+background:linear-gradient(40deg,purple 40%,skyblue 30%);
+color:white;
+width:90%;
+left:5%;
+top:10%;
+}
+#contact .btn{
+    cursor: pointer;
+    width: 90%;
+}
+.foot{
+    content:"";
+    height:50%;
+    width:100%;
+    position: absolute;
+    top:480%;
+    z-index:-1;
+    opacity: 0rem;
+    background-color: rgb(108, 105, 105);
+  
+}
+#contact form{
+    box-sizing: border-box;
+    position: absolute;
+    height: 800%;
+    width: 300%;
+    background:linear-gradient(50deg,orange 30%,rgb(164, 164, 19) 40%);
+    box-shadow: 3px 3px 10px 10px rgb(4, 85, 117);
+    animation:jayant3 5s infinite;
+}
+@keyframes jayant3{
+    0%{
+        border-radius: 100% 100% 106% 104% / 30% 30% 70% 70% ;
+    }
+    30%{
+        border-radius: 47% 53% 34% 66% / 49% 50% 50% 51%  ;
+    }
+    60%{
+        border-radius: 98% 2% 64% 36% / 8% 50% 50% 92%  ;
+    }
+    100%{
+        border-radius: 100% 0% 48% 52% / 10% 10% 90% 90%   ;
+    }
+}
+.foot h1{
+    position: relative;
+    top:35%;
+    left:48%;
+}
+@media screen and (max-width:1496px) {
+    #details{
+        top:140rem;
+    }
+    #contact{
+        top:195rem;
+    }
+    #contact form{
+        top:7rem;
+    }
+    .foot{
+        top:240rem;
+    }
+}
+@media screen and (max-width:1252px) {
+    #details h1{
+        position: relative;
+        left:25rem;
+    }
+    #details form{
+        left:100%;    
+    }
+    #contact form input,textarea{
+        left:2%;
+    }
+}
+@media screen and (max-width:1095px) {
+   #contact{
+    position: absolute;
+    top:420%;
+    left:38%;
+   }
+   .foot{
+    top:520%;
+}
+}
+@media screen and (max-width:1080px) {
+    #contact{
+     position: absolute;
+     top:420%;
+     left:35%;
+    } 
+ }
+ @media screen and (max-width:1069px) {
+    #details h1{
+        left:15rem;
+    }
+    #details form{
+        left:55%; 
+    }
+    #contact{
+        position: absolute;
+        top:420%;
+        left:15%;
+    } 
+    #contact h1{
+        position: relative;
+        left:90%;
+    }
+ }
+ @media screen and (max-width:810px) {
+    #details h1{
+        left:15rem;
+        top:3rem
+    }
+    #details form{
+        left:55%; 
+        top:2rem;
+    }
+ }
+ @media screen and (max-width:753px) {
+    #details h1{
+        left:9rem;
+        top:3rem
+    }
+    #details form{
+        left:9rem; 
+        top:2rem;
+    }
+    #contact{
+        position: absolute;
+        top:420%;
+        left:10%;
+    }
+ }
+ @media screen and (max-width:683px) {
+    #background::before{
+        animation:none;
+    }
+    #details h1{
+        left:9rem;
+        top:6rem
+    }
+    #details form{
+        left:9rem; 
+        top:6rem;
+        height: 70%;
+        width: 77%;
+      
+    }
+    #details form input,select{
+          font-size: 1.5rem;
+    }
+    #contact form{
+        height: 750%;
+        width: 200%;
+        left:40%;
+    }
+ }
+ @media screen and (max-width:653px) {
+    #details h1{
+        left:9rem;
+        top:9rem
+    }
+    #details form{
+        left:9rem; 
+        top:8rem;
+      
+    }
+ }
+ @media screen and (max-width:575px) {
+    #details h1{
+        left:7rem;
+    }
+    #details form{
+        left:9rem; 
+    }
+     #contact{
+        height: 4rem;
+        width: 40%;
+        left:10%;
+    } 
+ }
+ @media screen and (max-width:573px) {
+     #contact{
+        height: 4rem;
+        width: 40%;
+        left:1%;
+    } 
+ }
+ @media screen and (max-width:559px) {
+    #details h1{
+        top:11rem
+    }
+    #details form{
+        left:9rem; 
+        top:10rem;
+      
+    }
+    #contact{
+       height: 4rem;
+       width: 40%;
+       left:1%;
+       top:430%;
+   } 
+   .foot{
+    top:210rem;
+    }
+    .foot h1{
+        left:37%;
+    }
+}
+ @media screen and (max-width:535px) {
+    #details h1{
+        left:7rem;
+        top:13rem;
+        font-size:1.5rem;
+    }
+    #details form{
+        left:9rem; 
+        top:13rem;
+        height: 70%;
+        width: 77%;
+        font-size:1.0rem;
+    }
+     #contact form{
+        height: 750%;
+        width: 200%;
+        left:40%;
+    } 
+ }
+@media screen and (max-width:1200px) {
+    #details{
+        top:145rem;
+        left:1rem;
+    }
+}
+@media screen and (max-width:1178px) {
+    .container{
+        font-size: 1.5rem;
+    }
+    .navbar-unorderedlist{
+        display:flex;
+        font-size:.9rem;
+    }
+}
+@media screen and (max-width:1136px) {
+    .navbar-unorderedlist{
+        display:flex;
+        font-size:.8rem;
+    }
+}
+@media screen and (max-width:1093px) {
+    .navbar-unorderedlist{
+        display:flex;
+        font-size:.7rem;
+    }
+    .container{
+        font-size: 1.0rem;
+    }
+    #details{
+        top:110rem;
+    }
+}
+@media screen and (max-width:1051px) {
+    .navbar-unorderedlist{
+        display:flex;
+        font-size:.7rem;
+        margin-left:10rem; 
+    }
+    .container{
+        font-size: 1.0rem;
+    }
+    #details{
+        top:110rem;
+    }
+}
+@media screen and (max-width:1003px) {
+    .navbar-unorderedlist{
+        display:flex;
+        font-size:.7rem;
+        margin-left:7rem; 
+    }
+    .container{
+        font-size: 1.0rem;
+    }
+    #details{
+        top:110rem;
+    }
+}
+@media screen and (max-width:955px) {
+    .navbar-unorderedlist{
+        display:flex;
+        font-size:.7rem;
+        margin-left:5rem; 
+    }
+    .container{
+        font-size: 1.0rem;
+    }
+    #details{
+        top:110rem;
+    }
+}
+@media screen and (max-width:921px) {
+    .navbar-unorderedlist{
+        display:flex;
+        font-size:.7rem;
+        margin-left:3rem; 
+    }
+    .container{
+        font-size: 1.0rem;
+    }
+    #details{
+        top:110rem;
+    }
+}
+@media screen and (max-width:891px) {
+    .navbar-unorderedlist{
+        display:flex;
+        font-size:.7rem;
+        margin-left:1rem; 
+    }
+    .container{
+        font-size: 1.0rem;
+    }
+    #details{
+        top:110rem;
+    }
+}
+@media screen and (max-width:861px) {
+    .navbar-unorderedlist{
+        display:flex;
+        font-size:.7rem;
+        margin-left:.5rem; 
+    }
+    .container{
+        font-size: 1.0rem;
+    }
+    #details{
+        top:110rem;
+    }
+}
+@media screen and (max-width:850px) {
+    #main-div-heading{
+        display: none;
+    }
+    .navbar-unorderedlist{
+        display:flex;
+        font-size:.7rem;
+        margin-right:.6rem; 
+    }
+    .container{
+        font-size: 1.0rem;
+    }
+    #details{
+        top:110rem;
+    }
+}
+@media screen and (max-width:695px) {
+    *{margin:0;padding:0;}
+    #main-div{
+        display: flex;
+        flex-direction: column;
+    }
+    #main-div-heading{
+        display: block;
+    }
+    .navbar-unorderedlist{
+        display:flex;
+        flex-direction: column;
+        font-size:1rem;
+       
+    }
+    .navbar-unorderedlist{
+        display:flex;
+        margin-left:-5rem; 
+        
+    }
+    #main-div{
+        height:auto;
+        width:10%;
+        position: fixed;
+        z-index:1000;
+        border-radius: 1rem;
+        padding:10px 10px;
+       
+    }
+    .navbar-list{
+        margin-top:5rem;
+        display: block;
+        left:1rem;
+    }
+    /*
+    .container{
+        font-size: 1.0rem;
+    }
+    #details{
+        top:110rem;
+    } */
+}
